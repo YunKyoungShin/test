@@ -5,6 +5,10 @@
 <title>Insert title here</title>
 <!-- 초기화하기 -->
 <style type="text/css">
+	.main_layout{
+        width:1380px;
+        margin:0 auto;
+    }
 	*{
 		font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	}	
@@ -26,6 +30,7 @@
 		padding-bottom : 5px;
 	}
 	.search{
+		overflow : hidden;
 		position: relative;
   		top: 6px;
   		right : 15px;
@@ -165,7 +170,7 @@
 </style>
 <!--<link rel="stylesheet" type="text/css" href="mainTest.css"> -->
 </head>
-<body>
+<body class="main_layout">
  	<img src="./image/logo.png" id="logo">
  	     <nav id="navigation">
                 	  <form action="" method="post" class="search">
@@ -200,6 +205,6 @@
 		<footer>
 			<div>Footer</div>
 		</footer>
-	</div>  
+	</div>	  
 </body>
 </html>
