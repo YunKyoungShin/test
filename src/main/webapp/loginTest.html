@@ -53,7 +53,7 @@
 		text-align : center;
 		color : #08348C;
 	}
-	#user{
+	.user{
 		font-weight: 500;
 		position: relative;
 		padding : 5px;
@@ -70,7 +70,7 @@
 		position: relative;
 		color : #a9a9a9;
 	}
-	ul li .id,ul li .pwd{
+	ul li #id,ul li #pwd{
 		font-size : 15px;
 		position: relative;
 		width : 200px;
@@ -79,15 +79,14 @@
 		border: none;
 		background-color:rgba(255, 255, 255, 0);
 	}
-	ul li .id{
+	ul li #id{
 		left : 15px;
 	}
-	ul li .pwd{
+	ul li #pwd{
 		left : 6px;
 	}
-	.btn_login{
+	#btn_login{
 		font-size : 16px;
-		text-align : center;
 		width : 270px;
 		height : 45px;
 		background-color : #08348C;
@@ -97,7 +96,7 @@
 		margin-bottom : 130px;
 		border-radius : 5px 5px 5px 5px;
 	}
-	.btn_login:hover{
+	#btn_login:hover{
 		background-color : #F2AE30;
 		color : #08348C;
 		transition-duration: 0.5s;
@@ -124,12 +123,12 @@
 			<img src="./image/logo.png" id="logo">
 			<h2>Login</h2>
 			<ul>
-				<li id="user">ID<input class="id" type="text"></li>
-				<li id="user">PW<input class="pwd" type="password"></li>
+				<li class="user">ID<input id="id" type="text"></li>
+				<li class="user">PW<input id="pwd" type="password"></li>
 			</ul>
-				<input type="submit" class="btn_login" value="Login"><br>
+				<input type="submit" id="btn_login" value="Login"><br>
 		<div class="caption">
-				<a href="#">회원가입</a> <a href="#">ID/PW 찾기</a>
+				<a href="signupTest.html">회원가입</a> <a href="#">ID/PW 찾기</a>
 		</div>					
 		</form>
 	</div>	
